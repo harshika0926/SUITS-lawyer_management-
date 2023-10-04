@@ -3,9 +3,9 @@ import icon from "../assets/laptop.jpg";
 
 const Analytics = () => {
   return (
-    <div className="w-full bg-blue-500 py-16 px-4 text-white">
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-        <img className="w-[500px] mx-auto my-4" src={icon} alt="/" />
+    <div className="w-full bg-blue-500 py-4 px-4 text-white">
+      <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 mb-4">
+        <img className="w-[500px] rounded-md mx-auto my-4" src={icon} alt="/" />
         <div className="flex flex-col justify-center">
           <p className="text-[#00df9a] font-bold">CONNECT WITH LAWYERS</p>
           <p>
