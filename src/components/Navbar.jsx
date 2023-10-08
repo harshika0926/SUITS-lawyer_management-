@@ -20,22 +20,26 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="bg-blue-500 flex justify-between items-center h-20 w-full px-4 text-white">
+    <div className="bg-black opacity-80 flex justify-between items-center h-20 w-full px-4 text-white">
       <h1 className="w-full px-4 text-3xl font-bold text-white">
         <a href="/" className=" cursor-default">
           SUITS
         </a>
       </h1>
       <ul className="hidden md:flex space-x-8 ">
-        <li className="p-4">
+        <li className="p-4 hover:text-[#f5e671]">
           <a href="/">Home</a>
         </li>
-        <li className=" p-4 whitespace-nowrap">Consult An Expert</li>
-        <li className="p-4 whitespace-nowrap">Find Lawyer</li>
-        <li className="p-4 cursor-pointer">Login</li>
+        <li className=" p-4 cursor-pointer whitespace-nowrap hover:text-[#f5e671]">
+          Consult An Expert
+        </li>
+        <li className="p-4 cursor-pointer whitespace-nowrap hover:text-[#f5e671]">
+          Find Lawyer
+        </li>
+        <li className="p-4 cursor-pointer hover:text-[#f5e671]">Login</li>
         <Link to={`/register`}>
           <li
-            className=" p-2 cursor-pointer items-center text-center"
+            className=" p-2 cursor-pointer hover:text-[#f5e671] items-center text-center"
             onClick=""
           >
             <AiOutlineUser size={20} className="inline-block" />

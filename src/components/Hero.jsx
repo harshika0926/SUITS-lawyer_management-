@@ -3,9 +3,9 @@ import Typed from "react-typed";
 
 const Hero = () => {
   return (
-    <div className="text-white bg-blue-500">
-      <div className="w-full h-screen -mt-8 mb-0 text-center flex flex-col justify-center">
-        <p className="text-[black] font-bold p-1 text-3xl">Find lawyer</p>
+    <div className="text-white mt-8 ">
+      <div className="w-full h-screen -mt-8 mb-0 text-center flex flex-col justify-center bg-black bg-opacity-60  ">
+        <p className="font-bold p-1 text-3xl">Find lawyer</p>
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-4">
           {/* Added line breaks */}
           Legal <br /> Marketplace
@@ -29,8 +29,8 @@ const Hero = () => {
             loop
           />
         </div>
-        <button className="bg-[black] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-white">
-          Get Started
+        <button className="bg-black border-[1px] hover:bg-gray-100 hover:text-black hover:border-2 hover:border-gray-900 w-[200px] rounded-xl font-medium my-6 mx-auto py-3 text-white">
+          Find Legal Help
         </button>
       </div>
     </div>

@@ -5,11 +5,11 @@ import Triple from "../assets/triple.png";
 
 const Cards = () => {
   return (
-    <div className="py-20 px-4 bg-blue-500">
+    <div className="py-20 px-4 bg-[#0e1c2d]">
       {" "}
       {/* Added bg-blue-500 for blue background */}
       <div className="max-w-6xl mx-auto grid-cols-1 p-4 grid md:grid-cols-3 gap-12">
-        <div className="bg-blue-400 hover:bg-blue-200 text-center items-center w-full shadow-lg hover:shadow-xl flex flex-col p-8 my-4 rounded-lg hover:scale-105 duration-300">
+        <div className="bg-[#1d406a] hover:bg-blue-200 text-center items-center w-full shadow-lg hover:shadow-xl flex flex-col p-8 my-4 rounded-lg hover:scale-105 duration-300">
           <div className="p-6">
             <img
               className="w-20 mx-auto -mt-8 p-1 rounded-md bg-transparent "
