@@ -1,64 +1,59 @@
-import React from 'react';
+import React from "react";
 import {
- 
   FaFacebookSquare,
   FaGithubSquare,
   FaInstagram,
   FaTwitterSquare,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-black bg-blue-500'> {/* Changed background color and text color */}
-      <div>
-        <h1 className='w-full text-3xl font-bold text-black'>Hire lawyer</h1>
-        <p className='py-4 text-black'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
-        <div className='flex justify-between md:w-[75%] my-6'>
-          <FaFacebookSquare size={30} />
-          <FaInstagram size={30} />
-          <FaTwitterSquare size={30} />
-          <FaGithubSquare size={30} />
+    <footer>
+      <div className="w-full mx-auto py-12 px-12 grid lg:grid-cols-3 gap-8 text-gray-800 bg-white">
+        <div className="p-4">
+          <h1 className="w-full text-4xl font-bold text-black">SUITS</h1>
+          <p className="py-4 text-xl font-semibold text-gray-800">
+            Empowering Legal Access!
+          </p>
+          <div className="flex justify-between md:w-[65%] my-4">
+            <FaFacebookSquare size={30} color="black" />
+            <FaInstagram size={30} color="black" />
+            <FaTwitterSquare size={30} color="black" />
+            <FaGithubSquare size={30} color="black" />
+          </div>
+        </div>
+        {/* <div className="text-black">
+        <p className="my-2 text-3xl font-semibold">Quick Links</p>
+          <p className="my-2">Home</p>
+          <p className="my-2">Consult an Expert</p>
+          <p className="my-2">Find Lawyer</p>
+      </div> */}
+        <div className="lg:col-span-2 flex justify-around mt-6">
+          <div className="">
+            <h6 className="font-semibold py-2 text-xl text-black">
+              Quick Links
+            </h6>
+            <ul>
+              <li className="py-2 text-sm">Home</li>
+              <li className="py-2 text-sm">Consult an Expert</li>
+              <li className="py-2 text-sm">Find Lawyer</li>
+            </ul>
+          </div>
+
+          <div>
+            <h6 className="font-semibold py-2 text-xl text-black">Company</h6>
+            <ul>
+              <li className="py-2 text-sm">About</li>
+              <li className="py-2 text-sm">Privacy Policy</li>
+              <li className="py-2 text-sm">Terms of Service</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className='lg:col-span-2 flex justify-between mt-6'>
-        <div>
-          <h6 className='font-medium text-black'>Solutions</h6>
-          <ul>
-            <li className='py-2 text-sm'>Analytics</li>
-            <li className='py-2 text-sm'>Marketing</li>
-            <li className='py-2 text-sm'>Commerce</li>
-            <li className='py-2 text-sm'>Insights</li>
-          </ul>
-        </div>
-        <div>
-          <h6 className='font-medium text-black'>Support</h6>
-          <ul>
-            <li className='py-2 text-sm'>Pricing</li>
-            <li className='py-2 text-sm'>Documentation</li>
-            <li className='py-2 text-sm'>Guides</li>
-            <li className='py-2 text-sm'>API Status</li>
-          </ul>
-        </div>
-        <div>
-          <h6 className='font-medium text-black'>Company</h6>
-          <ul>
-            <li className='py-2 text-sm'>About</li>
-            <li className='py-2 text-sm'>Blog</li>
-            <li className='py-2 text-sm'>Jobs</li>
-            <li className='py-2 text-sm'>Press</li>
-            <li className='py-2 text-sm'>Careers</li>
-          </ul>
-        </div>
-        <div>
-          <h6 className='font-medium text-black'>Legal</h6>
-          <ul>
-            <li className='py-2 text-sm'>Claim</li>
-            <li className='py-2 text-sm'>Policy</li>
-            <li className='py-2 text-sm'>Terms</li>
-          </ul>
-        </div>
+      <div className="text-center font-semibold bg-[#0e1c2d] text-white">
+        <p>© 2023 SUITS. All rights reserved.</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

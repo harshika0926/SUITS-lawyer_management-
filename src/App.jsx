@@ -1,26 +1,17 @@
-
-import React from 'react';
-import Analytics from 'C:/Users/ASUS/Desktop/frontend/suits/src/components/Analytics.jsx';
-import Cards from './components/Cards';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Newsletter from './components/Newsletter';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Landing from "./pages/Landing";
+import Register from "./pages/Register";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Analytics />
-      <Newsletter />
-      <Cards />
-      <Footer />
-    </div>
+    <main>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </main>
   );
 }
 
 export default App;
-
-
-
